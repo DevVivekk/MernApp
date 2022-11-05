@@ -9,7 +9,7 @@ function Page4() {
      <div className='boxes'>
         <div className='box-1'><img src={IMGG}  className='img-data' alt='img' /><h4 className='name-data'>Aditya</h4><p className='review'>Bhaiya Ji Hue Hue! 😊</p></div>
         <div className='box-1'><img src={IMGGG} className='img-data' alt='img' /><h4 className='name-data'>Rajkumar Cheems</h4><p className='review'>Mai kya comment karu Mai toh raja hu! Hue hue hue.. 😘</p></div>
-        <div className='box-1'><img src={IMGGGG} className='img-data' alt='img' /><h4 className='name-data'>Sohan</h4><p className='review'>Bhaut Thand Lag raha hai bhai baad mei comment karta hu..😂</p></div>
+        <div className='box-1'><img src={IMGGGG} className='img-data' alt='img' /><h4 className='name-data'>Sohan</h4><p className='review'>Bahut Thand Lag raha hai bhai baad mei comment karta hu..😂</p></div>
         </div>
     </div>
   )

@@ -28,7 +28,7 @@
         height:auto;
     }
     .testimonials{
-        margin-left:25%;
+        margin-left:20%;
     }
     .aboutus{
         margin-left:35%;
@@ -48,6 +48,27 @@
     }
     .review{
         font-size:1.5rem;
+    }
+    .hero-img{
+        height:30rem;
+        width:25rem;
+        margin-left:0rem;
+        border:2px solid white;
+        border-radius:3rem;
+    }
+    .hero-img:hover{
+        border:2px solid blue;
+    }
+    .hero-last-name{
+        font-size:2rem;
+    }
+    .nav-dp{
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    position: relative;
+    margin-right: 30%;
+    border: 3px solid green;
     }
 }
 @media screen and (max-width:546px){
