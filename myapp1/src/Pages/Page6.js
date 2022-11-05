@@ -16,7 +16,7 @@ function Page6() {
             <div className='row-1'>
             <a href="https://github.com/vivekk01?tab=repositories"  className='footer-links' target="_blank" rel="noopener noreferrer">Github</a>
             <NavLink className='footer-links' to='/'>Contributors</NavLink>
-            <NavLink className='footer-links' to='/'>Supporters</NavLink>
+            <NavLink className='footer-links' to='/'>Market Place</NavLink>
             </div>
             <div className='row-1'>
             <NavLink className='footer-links' to='/blog'>Blogs</NavLink>
