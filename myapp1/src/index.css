@@ -102,8 +102,8 @@ html{
     padding: 2%;
 }
 .hero-img{
-    height: 55vh;
-    width: 25vw;
+    height: 35rem;
+    width: 30rem;
     position: absolute;
     left: 70%;
     border-radius: 5px;
@@ -199,7 +199,7 @@ html{
     justify-content: space-evenly;
     margin-top: 2rem;
     margin-bottom: 2rem;
-    flex-wrap: wrap-reverse;
+    flex-wrap: wrap;
  }
 
 .box{
@@ -326,8 +326,8 @@ html{
         border-radius:4rem;
     }
     .meme-img{
-        width: 30vw;
-        height: 60vh;
+        width: 30rem;
+        height: 60rem;
         margin-top:3%;
         margin-left: 10%;
         border-radius:3px;
