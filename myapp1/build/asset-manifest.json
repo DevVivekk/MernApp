@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.b46aaa8c.css",
+    "main.js": "/static/js/main.55df0030.js",
+    "static/js/787.7cd949fd.chunk.js": "/static/js/787.7cd949fd.chunk.js",
+    "static/media/delhi.jpg": "/static/media/delhi.16b799ca323e0a605da9.jpg",
+    "static/media/Astro.png": "/static/media/Astro.aab73ccf7a02e08418f7.png",
+    "static/media/imp.png": "/static/media/imp.99986b9677545baf0bd3.png",
+    "static/media/Vivek.jpg": "/static/media/Vivek.a18de28cf108b3eb756b.jpg",
+    "static/media/akshardham.png": "/static/media/akshardham.ec4031158527b4296933.png",
+    "static/media/codeee.png": "/static/media/codeee.de3d62b0bfbbd1554853.png",
+    "static/media/ayodhya.png": "/static/media/ayodhya.75fc8b97dcc5a5fe2ef3.png",
+    "static/media/OIPP.PNG": "/static/media/OIPP.54661909a533a9b41f69.PNG",
+    "static/media/brain-image.jpg": "/static/media/brain-image.4c310d41e61125bb65e7.jpg",
+    "static/media/OP.jpg": "/static/media/OP.179b0bdd46731b4b47ca.jpg",
+    "static/media/colddog.png": "/static/media/colddog.3de5577fda2d7eb6d152.png",
+    "static/media/jadugar.png": "/static/media/jadugar.6cda0c40a8082c09710e.png",
+    "index.html": "/index.html",
+    "main.b46aaa8c.css.map": "/static/css/main.b46aaa8c.css.map",
+    "main.55df0030.js.map": "/static/js/main.55df0030.js.map",
+    "787.7cd949fd.chunk.js.map": "/static/js/787.7cd949fd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b46aaa8c.css",
+    "static/js/main.55df0030.js"
+  ]
+}
