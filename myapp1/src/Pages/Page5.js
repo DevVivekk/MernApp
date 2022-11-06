@@ -30,7 +30,10 @@ function Page5() {
     });
     //const user_data = await response.json();
     //  console.log(user_data);
-     if(response.status===422||!data){
+   if(number.length !== 10){
+      window.alert('Please enter a valid mobile number!')
+    }
+     else if(response.status===422||!data){
       window.alert('Oops! Please fill correctly.')
      }else if(response.status===404){
       window.alert('Number & email are unique!')
@@ -38,7 +41,7 @@ function Page5() {
       window.alert('Please recheck your form data.')
      }else{
       window.alert(`Thanks ${name} you will receive a confirmation mail shortly!`)
-     }
+     }  
   }
   return (
     <div className='page-5'>

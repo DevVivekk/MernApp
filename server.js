@@ -33,6 +33,15 @@ app.post('/connect',async (req,res)=>{
    }
 })
 
+app.get('/apidata',async(req,res)=>{
+   const findData = await Productt.find({})
+   res.status(201).json(findData);
+})
+app.delete('/dapi',async(req,res)=>{
+   const deletedata = await Productt.deleteMany({})
+   console.log(deletedata);
+   res.status(201).json(deletedata);
+})
 if(process.env.NODE_ENV ==="production"){
    app.use(express.static(path.join(__dirname,"./myapp1/build")));
   app.get('*',(req,res)=>{
