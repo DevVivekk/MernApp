@@ -444,7 +444,8 @@ padding: 0%;
     border-radius:2rem;
     box-shadow: 4px 3px 8px 1px whitesmoke;
     -webkit-box-shadow: 4px 3px 8px 1px whitesmoke;
-    overflow:auto;
+    overflow-x:auto;
+    overflow-y:hidden;
     margin-bottom:2rem;
     margin-top:2rem;
 }
