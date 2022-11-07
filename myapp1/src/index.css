@@ -425,6 +425,7 @@ padding: 0%;
     border-radius:2rem;
     box-shadow: 4px 3px 8px 1px whitesmoke;
     -webkit-box-shadow: 4px 3px 8px 1px whitesmoke;
+    margin-bottom:2rem;
 }
 .add-comment{
     width:30rem;
@@ -434,6 +435,8 @@ padding: 0%;
     -webkit-box-shadow: 4px 3px 8px 1px whitesmoke;
     padding:2rem;
     padding-left:2rem !important;
+    margin-bottom:2rem;
+    margin-top:2rem;
 }
 .view-comments{
     width:30rem;
@@ -441,8 +444,9 @@ padding: 0%;
     border-radius:2rem;
     box-shadow: 4px 3px 8px 1px whitesmoke;
     -webkit-box-shadow: 4px 3px 8px 1px whitesmoke;
-    margin-left:3rem;
     overflow:auto;
+    margin-bottom:2rem;
+    margin-top:2rem;
 }
 .commentss{
     /* height:10rem;
@@ -455,10 +459,11 @@ padding: 0%;
     border-radius:2rem;
     box-shadow: 4px 3px 8px 1px whitesmoke;
     -webkit-box-shadow: 4px 3px 8px 1px whitesmoke;
-    margin:1.5rem 0rem 1.5rem 0rem;
+    margin:0rem 0rem 1.5rem 0rem;
     overflow-x:hidden;
 }
 .name-comment{
+    margin-top:1rem;
     margin:1rem 0rem 1rem 2rem;
     font-size:1.6rem;
 }
