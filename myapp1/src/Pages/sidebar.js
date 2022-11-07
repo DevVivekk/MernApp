@@ -12,7 +12,7 @@ import React from 'react'
 function Sidebar() {
   return (
         <div className='toggle shadow-xl'>
-    <NavLink to='/undefined4' className = 'links'>Gallery<span className='icons'><CameraSharpIcon /></span></NavLink>
+    <NavLink to='/gallery' className = 'links'>Gallery<span className='icons'><CameraSharpIcon /></span></NavLink>
     <NavLink to='/myprojects' className = 'links'>My Projects<span className='icons'><AutoAwesomeSharpIcon /></span></NavLink>
     <NavLink to='/undefined' className = 'links'>Feedback<span className='icons'><FeedbackSharpIcon /></span></NavLink>
     <NavLink to='/undefined1' className = 'links'>Team<span className='icons'><GroupsSharpIcon /></span></NavLink>

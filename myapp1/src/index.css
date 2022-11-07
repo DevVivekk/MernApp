@@ -112,7 +112,7 @@ html{
     border: 3px solid whitesmoke;
     padding: 1%;
     display: block;
-    width: auto;
+    width: 100%;
     height: auto;
     border-radius: 5px;
     background-color:snow;
@@ -399,4 +399,80 @@ padding: 0%;
     text-decoration: underline;
     font-weight: 700;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+/* // so from here CSS of Gallery function Starts.................. */
+.gallery{
+    width:auto;
+    height:100%;
+    box-shadow: 4px 3px 8px 1px whitesmoke;
+    -webkit-box-shadow: 4px 3px 8px 1px whitesmoke;
+    margin-top:2rem;
+    font-size:30px;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+    flex-wrap:wrap;
+}
+.gallery-image{
+    width:30rem;
+    height:25rem;
+    border-radius:2rem;
+}
+.gallery-part1{
+    width:30rem;
+    height:auto;
+    border-radius:2rem;
+    box-shadow: 4px 3px 8px 1px whitesmoke;
+    -webkit-box-shadow: 4px 3px 8px 1px whitesmoke;
+}
+.add-comment{
+    width:30rem;
+    height:23rem;
+    border-radius:2rem;
+    box-shadow: 4px 3px 8px 1px whitesmoke;
+    -webkit-box-shadow: 4px 3px 8px 1px whitesmoke;
+    padding:2rem;
+    padding-left:2rem !important;
+}
+.view-comments{
+    width:30rem;
+    height:30rem;
+    border-radius:2rem;
+    box-shadow: 4px 3px 8px 1px whitesmoke;
+    -webkit-box-shadow: 4px 3px 8px 1px whitesmoke;
+    margin-left:3rem;
+    overflow:auto;
+}
+.commentss{
+    /* height:10rem;
+    width:30rem; */
+}
+.allinone{
+    background-color:white;
+    height:auto;
+    width:30rem;
+    border-radius:2rem;
+    box-shadow: 4px 3px 8px 1px whitesmoke;
+    -webkit-box-shadow: 4px 3px 8px 1px whitesmoke;
+    margin:1.5rem 0rem 1.5rem 0rem;
+    overflow-x:hidden;
+}
+.name-comment{
+    margin:1rem 0rem 1rem 2rem;
+    font-size:1.6rem;
+}
+.comment-comment{
+    margin:1rem 0rem 1rem 2rem;
+    font-size:1rem;
+    color:corn;
+    font-style:italic;
+}
+.caption{
+    font-size:1.4rem !important;
+    font-weight:700;
+    color:black;
+    font-style:oblique;
+    margin-left:1rem;
+    margin-bottom:1rem;
 }

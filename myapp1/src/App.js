@@ -10,6 +10,7 @@ import Page5 from './Pages/Page5'
 import Blog from './Pages/blog'
 import Page6 from './Pages/Page6'
 import Updatee from './Pages/update'
+import Gallery from './acc/gallery'
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
     <Routes>
       <Route path='/' element={[<Page2 />,<Page3 />,<Page4 />,<Page5 />,<Updatee />]} />
       <Route path='/blog' element={<Blog />} />
+      <Route path='/gallery' element={<Gallery />} />
       <Route path='/about' element={<Page3 />} />
     </Routes>
     <Page6 />

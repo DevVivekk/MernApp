@@ -1,4 +1,5 @@
 const Productt = require('./form')
+const commentModel = require('./form2')
 const express = require('express')
 const cors = require('cors')
 const path = require('path')
@@ -37,18 +38,55 @@ app.get('/apidata',async(req,res)=>{
    const findData = await Productt.find({})
    res.status(201).json(findData);
 })
-app.delete('/dapi',async(req,res)=>{
-   const deletedata = await Productt.deleteMany({})
-   console.log(deletedata);
-   res.status(201).json(deletedata);
+app.delete('/api/:id',async(req,res)=>{
+   const id = req.params.id
+  const deleting = await Productt.findByIdAndDelete({_id:id})
+  console.log(deleting);
+  res.status(201).json(deleting);
 })
+
+
+
+//lets do server programming for comments database...
+
+app.post('/postcomments',async(req,res)=>{
+   try{
+      const {name,comment} = req.body;
+      const userComment = await commentModel.findOne({name:name})
+      if(userComment){
+         res.status(404).send('Bad request!')
+      }
+      const saveCommet = new commentModel ({name,comment})
+       await saveCommet.save();
+       console.log(saveCommet);
+       res.status(201).send(saveCommet)
+   }catch(e){
+      res.status(400).send('Bad Request!')
+   }
+})
+
+app.delete('/dall',async(req,res)=>{
+   const deleteComm = await commentModel.deleteMany({});
+   res.status(201).send(deleteComm);
+})
+
+app.get('/capi',async(req,res)=>{
+   try{
+      const findComments =  await commentModel.find({})
+      res.status(201).json(findComments);
+   }catch(e){
+      res.status(400).send(e)
+      console.log(e);
+   }
+})
+
+
 if(process.env.NODE_ENV ==="production"){
    app.use(express.static(path.join(__dirname,"./myapp1/build")));
   app.get('*',(req,res)=>{
    res.sendFile(path.resolve(__dirname,'./myapp1','build','index.html'));
   })
 }
-
 //lets see
 
 const PORT = process.env.PORT || 4000
