@@ -54,7 +54,8 @@ const postComment = async(e)=>{
      <Button  onClick={()=>setAdd(!add)}  style={{ marginLeft: 15 }} type='submit'  size='large' variant="contained">Add Comment</Button>
     </div>
     
-       <div className='view-comments'>
+       <div className='view-comments'> 
+       <h4 className='allinonee' style={{textAlign:'center',color:'green'}}>Comment Section</h4><hr />
       {
         comment.map((item,id)=>
           <Comments key={id} value={item} />
