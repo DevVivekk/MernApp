@@ -12,7 +12,7 @@ const handleInput = (e)=>{
     name=e.target.name;
     value= e.target.value;
     setData({...data,[name]:value})
-}
+} 
 
 const postComment = async(e)=>{
   e.preventDefault();
@@ -39,7 +39,6 @@ const postComment = async(e)=>{
      await fetch('/capi')
     .then((resp)=>resp.json()
     .then((result)=>{
-      console.log(result);
       setComment(result)
     }))
    }
