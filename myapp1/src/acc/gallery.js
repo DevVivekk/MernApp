@@ -55,7 +55,7 @@ const postComment = async(e)=>{
     </div>
     
        <div className='view-comments'> 
-       <h4 className='allinonee' style={{textAlign:'center',color:'green'}}>Comment Section</h4><hr />
+      <h5 className='allinonee' style={{textAlign:'center',color:'green'}}>Comment Section</h5><hr /><br />
       {
         comment.map((item,id)=>
           <Comments key={id} value={item} />
