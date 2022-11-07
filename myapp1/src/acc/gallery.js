@@ -52,6 +52,15 @@ const postComment = async(e)=>{
     <p className='caption'>Embracing the pure love of Rishikesh..💖</p><hr/>
      <Button  onClick={()=>setAdd(!add)}  style={{ marginLeft: 15 }} type='submit'  size='large' variant="contained">Add Comment</Button>
     </div>
+    {
+      add?<div className='add-comment'>
+    <br /><TextField className='formfield' name='name' value={data.name} onChange={handleInput}  InputProps={{ style: { fontSize: 17 } }}
+        InputLabelProps={{ style: { fontSize: 18 } }} id="outlined-basic" size="small" label="Name" placeholder='Enter your name' variant="outlined" /> <br /><br/>
+         <TextField className='formfield' name='comment' value={data.comment} onChange={handleInput}  InputProps={{ style: { fontSize: 17 } }}
+        InputLabelProps={{ style: { fontSize: 18 } }} id="outlined-basic" size="small" label="Comment" placeholder='Enter your comment' variant="outlined" /> <br />
+         <br /><Button onClick={postComment} style= { { marginLeft: 10 }} type='submit'  size='large' variant="outlined">Post</Button>
+    </div>:null
+    }
     
        <div className='view-comments'> 
       <h5 className='allinonee' style={{textAlign:'center',color:'green',textDecoration:'underline'}}>Comment Section</h5><br />
@@ -62,15 +71,6 @@ const postComment = async(e)=>{
       }
      
      </div>
-    {
-      add?<div className='add-comment'>
-    <br /><TextField className='formfield' name='name' value={data.name} onChange={handleInput}  InputProps={{ style: { fontSize: 17 } }}
-        InputLabelProps={{ style: { fontSize: 18 } }} id="outlined-basic" size="small" label="Name" placeholder='Enter your name' variant="outlined" /> <br /><br/>
-         <TextField className='formfield' name='comment' value={data.comment} onChange={handleInput}  InputProps={{ style: { fontSize: 17 } }}
-        InputLabelProps={{ style: { fontSize: 18 } }} id="outlined-basic" size="small" label="Comment" placeholder='Enter your comment' variant="outlined" /> <br />
-         <br /><Button onClick={postComment} style= { { marginLeft: 10 }} type='submit'  size='large' variant="outlined">Post</Button>
-    </div>:null
-    }
   
     </div>
   )
