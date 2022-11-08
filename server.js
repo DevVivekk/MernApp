@@ -53,10 +53,10 @@ app.post('/postcomments',async(req,res)=>{
       const {name,comment} = req.body;
       const userComment = await commentModel.findOne({name:name})
       if(userComment){
-         res.status(404).send('Bad request!')
+         res.status(401).send('Bad request!')
       }
       try{
-      const saveCommet = new commentModel ({name,comment})
+      const saveCommet = new commentModel (req.body)
        await saveCommet.save();
        console.log(saveCommet);
        res.status(201).send(saveCommet)

@@ -25,20 +25,21 @@ const postComment = async(e)=>{
   },
   body:JSON.stringify({name,comment})
 })
-  if(sendComment.status===404 || !data){
+  if(sendComment.status===401 || !data){
     window.alert(`${name} already exists!`)
   }else if(sendComment.status===400 || !data){
     window.alert('Please fill correctly!')
   }else{
+    fetchCommenst();
     const body_data = await sendComment.json();
     console.log(body_data);
-    window.alert(`Thanks ${name} for posting your comments!`);
+    window.alert(`Thanks ${name} for posting your comment!`);
   }
 }
 
 
-   const fetchCommenst = async()=>{
-     await fetch('/capi')
+   const fetchCommenst = ()=>{
+      fetch('/capi')
     .then((resp)=>resp.json()
     .then((result)=>{
       setComment(result)
