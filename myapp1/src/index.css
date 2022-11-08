@@ -68,7 +68,7 @@ html{
    margin: 2% 0% 2% 0% ;
    width: auto;
    height: auto;
-   border-radius: 1.5rem;
+   border-radius: 3px;
    color:white;
    background-color:black;
    font-size: 2rem;
@@ -262,7 +262,7 @@ html{
         margin-top: 4%;
         box-shadow: 4px 4px 4px 4px whitesmoke;
        -webkit-box-shadow: 4px 4px 4px 4px whitesmoke;
-       background-color:#D7F4D8;
+       background-color:aliceblue;
        border-radius: 2rem;
 }
     .page-5{
