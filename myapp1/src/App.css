@@ -1,15 +1,25 @@
 @media screen and (max-width:1010px){
-    .hero-img{
+    /* .hero-img{
         position: relative;
         left: 15%;
         margin-top: 15%;
         height: 50vh;
         width: 45vw;
 
+    } */
+}
+@media screen and (max-width:800px){
+    .hero-img{
+        height: 25rem;
+        width: 20rem;
     }
 }
-
 @media screen and (max-width:600px){
+    .page2{
+        display:flex;
+        flex-direction:column;
+        align-content:space-between;
+    }
     .linkone{
         margin: 2%;
     }
@@ -49,13 +59,13 @@
     .review{
         font-size:1.5rem;
     }
-    .hero-img{
+    /* .hero-img{
         height:30rem;
         width:25rem;
         margin-left:0rem;
         border:2px solid white;
         border-radius:3rem;
-    }
+    } */
     .hero-img:hover{
         border:2px solid blue;
     }
@@ -81,6 +91,9 @@
     .info{
         font-size: 2vw;
         margin-top: 7%;
+    }
+    .hero-name{
+        font-size:2.1rem;
     }
 }
 @media screen and (max-width:650px){

@@ -8,6 +8,7 @@
 
 html{
     font-size:62.5%;
+    overflow-x:hidden;
 }
 *{
     padding: 0%;
@@ -64,22 +65,25 @@ html{
 }
 
 .page2{
-   padding: 0%;
    margin: 2% 0% 2% 0% ;
    width: auto;
    height: auto;
-   background-color: black;
-   border: 3px whitesmoke;
-   border-radius: 4px;
+   border-radius: 1.5rem;
    color:white;
-   font-size: 2em;
-   box-shadow: 4px 3px 8px 1px white;
-  -webkit-box-shadow: 4px 3px 8px 1px white;
+   background-color:black;
+   font-size: 2rem;
+   display:flex;
+   flex-direction:row-reverse;
+   justify-content:space-between;
+   padding:4rem;
+   box-shadow: 4px 3px 8px 1px whitesmoke;
+   -webkit-box-shadow: 4px 3px 8px 1px whitesmoke;
 }
 .hero-name{
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     margin-top: 15%;
     font-family: 'Spectral', serif;
+    color:white;
 }
 .hero-last-name{
     margin-top: 3%;
@@ -94,19 +98,17 @@ html{
     color: whitesmoke !important;
     font-size: 1.8rem;
 }
-.hero-text{
+/* .hero-text{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     margin: 3%;
     padding: 2%;
-}
+} */
 .hero-img{
     height: 35rem;
     width: 30rem;
-    position: absolute;
-    left: 70%;
-    border-radius: 5px;
+    border-radius: 2rem;
 }
 .nav{
     border: 3px solid whitesmoke;
@@ -256,12 +258,11 @@ html{
 .box-1{
         height: 25rem;
         width: 20rem;
-        margin-top: 5%;
-        border: 2px solid aliceblue;
+        margin-top: 4%;
         box-shadow: 4px 3px 8px 4px whitesmoke;
        -webkit-box-shadow: 8px 8px 8px 4px whitesmoke;
-       background-color:aliceblue;
-       border-radius: 10px;
+       background-color:white;
+       border-radius: 2rem;
 }
     .page-5{
         padding: 1%;
@@ -282,7 +283,7 @@ html{
         height: 7rem;
         width: 7rem;
         border-radius:50%;
-        border:2px solid whitesmoke;
+        border:2px solid green;
     }
     .name-data{
         margin-top: 2%;
