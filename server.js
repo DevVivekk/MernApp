@@ -50,18 +50,23 @@ app.delete('/api/:id',async(req,res)=>{
 //lets do server programming for comments database...
 
 app.post('/postcomments',async(req,res)=>{
-      const {name,comment} = req.body;
-      const userComment = await commentModel.findOne({name:name})
-      if(userComment){
-         res.status(401).send('Bad request!')
-      }
-      try{
-      const saveCommet = new commentModel (req.body)
-       await saveCommet.save();
-       console.log(saveCommet);
-       res.status(201).send(saveCommet)
-   }catch(e){
-      res.status(400).send('Bad Request!')
+   const {name,comment}  = req.body
+   if(!name || !comment){
+    return res.status(422).json({error: 'Form cant be empty!'})
+   }
+    try{
+     const userexists  = await Productt.findOne({name:name})
+     if(userexists){
+        return res.status(404).json({error:'Oops! Please Fill Correctly!'})
+    }
+
+    const user_data = new Productt ({name,comment});
+    await user_data.save();
+    console.log(user_data);
+    res.status(201).json({message: 'User posted comment successfully!'});
+
+ }catch(err){
+   res.status(400).json(err);
    }
 })
 

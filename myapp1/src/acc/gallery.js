@@ -25,15 +25,14 @@ const postComment = async(e)=>{
   },
   body:JSON.stringify({name,comment})
 })
-  if(sendComment.status===401 || !data){
+  if(sendComment.status===404 || !data){
     window.alert(`${name} already exists!`)
-  }else if(sendComment.status===400 || !data){
+  }else if(sendComment.status===422){
     window.alert('Please fill correctly!')
   }else{
-    fetchCommenst();
-    const body_data = await sendComment.json();
-    console.log(body_data);
+     await sendComment.json();
     window.alert(`Thanks ${name} for posting your comment!`);
+    fetchCommenst();
   }
 }
 
