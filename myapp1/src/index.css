@@ -229,6 +229,7 @@ html{
 }
 .about-detail{
     margin-top: 5%;
+    margin-bottom: 5%;
     word-spacing: 5px;
     line-height: 150%;
     word-break: keep-all;
@@ -259,9 +260,9 @@ html{
         height: 25rem;
         width: 20rem;
         margin-top: 4%;
-        box-shadow: 4px 3px 8px 4px whitesmoke;
-       -webkit-box-shadow: 8px 8px 8px 4px whitesmoke;
-       background-color:white;
+        box-shadow: 4px 4px 4px 4px whitesmoke;
+       -webkit-box-shadow: 4px 4px 4px 4px whitesmoke;
+       background-color:#D7F4D8;
        border-radius: 2rem;
 }
     .page-5{
@@ -322,6 +323,7 @@ html{
     .form-input{
         margin-top:3%;
         width: 25rem;
+        height:45rem;
         font-size:1.9rem !important;
         box-shadow: 4px 3px 8px 1px whitesmoke;
         -webkit-box-shadow: 4px 3px 8px 1px whitesmoke;
@@ -450,6 +452,10 @@ padding: 0%;
     overflow-x:hidden;
     margin-bottom:2rem;
     margin-top:2rem;
+    border:0.5rem solid #DFD7F4;
+}
+.view-comments:hover{
+    border:0.5rem solid #D7ECF4;
 }
 .allinone{
     background-color:white;
