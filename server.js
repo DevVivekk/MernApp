@@ -50,12 +50,12 @@ app.delete('/api/:id',async(req,res)=>{
 //lets do server programming for comments database...
 
 app.post('/postcomments',async(req,res)=>{
-   try{
       const {name,comment} = req.body;
       const userComment = await commentModel.findOne({name:name})
       if(userComment){
          res.status(404).send('Bad request!')
       }
+      try{
       const saveCommet = new commentModel ({name,comment})
        await saveCommet.save();
        console.log(saveCommet);
