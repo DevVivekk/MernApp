@@ -55,12 +55,12 @@ app.post('/postcomments',async(req,res)=>{
     return res.status(422).json({error: 'Form cant be empty!'})
    }
     try{
-     const userexists  = await Productt.findOne({name:name})
+     const userexists  = await commentModel.findOne({name:name})
      if(userexists){
         return res.status(404).json({error:'Oops! Please Fill Correctly!'})
     }
 
-    const user_data = new Productt ({name,comment});
+    const user_data = new commentModel ({name,comment});
     await user_data.save();
     console.log(user_data);
     res.status(201).json({message: 'User posted comment successfully!'});
