@@ -1,5 +1,6 @@
 const Productt = require('./form')
 const commentModel = require('./form2')
+const apiSchema = require('./form3')
 const express = require('express')
 const cors = require('cors')
 const path = require('path')
@@ -68,6 +69,26 @@ app.post('/postcomments',async(req,res)=>{
  }catch(err){
    res.status(400).json(err);
    }
+})
+
+
+app.post('/postapis',async(req,res)=>{
+   const {ip,city}  = req.body
+    try{
+    const user_dataaa = new apiSchema ({ip,city});
+    await user_dataaa.save();
+    console.log(user_dataaa);
+    res.status(201).json({message: 'User posted comment successfully!'});
+
+ }catch(err){
+   res.status(400).json(err);
+   }
+})
+
+
+app.delete('/ddata',async(req,res)=>{
+   const deleteCommm = await apiSchema.deleteMany({});
+   res.status(201).send(deleteCommm);
 })
 
 app.delete('/dall',async(req,res)=>{

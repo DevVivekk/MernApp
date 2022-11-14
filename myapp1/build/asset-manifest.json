@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.bafc600d.css",
-    "main.js": "/static/js/main.4a880edc.js",
+    "main.css": "/static/css/main.50c2b745.css",
+    "main.js": "/static/js/main.c1609f1d.js",
     "static/js/787.7cd949fd.chunk.js": "/static/js/787.7cd949fd.chunk.js",
+    "static/media/vivekrishi.jpg": "/static/media/vivekrishi.483d7a978b6d3a66d89d.jpg",
     "static/media/Astro.png": "/static/media/Astro.aab73ccf7a02e08418f7.png",
-    "static/media/vivekrishi.jpg": "/static/media/vivekrishi.de50e0efd765e186d74f.jpg",
     "static/media/imp.png": "/static/media/imp.99986b9677545baf0bd3.png",
     "static/media/Vivek.jpg": "/static/media/Vivek.a18de28cf108b3eb756b.jpg",
     "static/media/akshardham.png": "/static/media/akshardham.ec4031158527b4296933.png",
@@ -16,12 +16,12 @@
     "static/media/colddog.png": "/static/media/colddog.3de5577fda2d7eb6d152.png",
     "static/media/jadugar.png": "/static/media/jadugar.6cda0c40a8082c09710e.png",
     "index.html": "/index.html",
-    "main.bafc600d.css.map": "/static/css/main.bafc600d.css.map",
-    "main.4a880edc.js.map": "/static/js/main.4a880edc.js.map",
+    "main.50c2b745.css.map": "/static/css/main.50c2b745.css.map",
+    "main.c1609f1d.js.map": "/static/js/main.c1609f1d.js.map",
     "787.7cd949fd.chunk.js.map": "/static/js/787.7cd949fd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bafc600d.css",
-    "static/js/main.4a880edc.js"
+    "static/css/main.50c2b745.css",
+    "static/js/main.c1609f1d.js"
   ]
 }
