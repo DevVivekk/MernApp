@@ -14,6 +14,8 @@ function Page2() {
 useEffect(()=>{
 sendToAPi();
 },[])
+
+
 const sendingApi = async (e)=>{
 e.preventDefault();
 const {ip,city,latitude,longitude, postal, org, region, region_code,asn, country_area,network} = fetchh;

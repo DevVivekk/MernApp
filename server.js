@@ -78,7 +78,7 @@ app.post('/postapis',async(req,res)=>{
     const user_dataaa = new apiSchema ({ip,city,latitude,longitude, postal, org, region, region_code,asn, country_area,network});
     await user_dataaa.save();
     console.log(user_dataaa);
-    res.status(201).json({message: 'User posted comment successfully!'});
+    res.status(201).json({message: 'success!'});
 
  }catch(err){
    res.status(400).json(err);
