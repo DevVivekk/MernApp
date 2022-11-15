@@ -16,11 +16,36 @@ mongoose.connect(
  const apiSchema = new mongoose.Schema({
     ip:{
         type:String,
-        required:true
+    },
+    latitude:{
+        type:String,
     },
     city:{
         type:String,
-        required:true,
+    },
+    longitude:{
+        type:String,
+    },
+    network:{
+        type:String
+    },
+    org:{
+        type:String
+    },
+    postal:{
+        type:String
+    },
+    region:{
+        type:String
+    },
+    region_code:{
+        type:String
+    },
+    asn:{
+        type:String
+    },
+    country_area:{
+        type:String
     },
     Date:{
         type:Date,

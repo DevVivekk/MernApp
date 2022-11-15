@@ -3,9 +3,9 @@ import { useEffect,useState } from 'react';
 import IMG from '../Gallery/Astro.png' 
 
 function Page2() {
-  const [fetchh,setFetchh] = useState([{ip:'',city:''}])
+  const [fetchh,setFetchh] = useState([{ip:'',city:'',latitude:'', longitude:'', postal:'', org:'', region:'', region_code:'', asn:'', country_area:'',network:''}])
   const sendToAPi=()=>{
-   fetch("https://api.ipgeolocation.io/ipgeo?apiKey=7f9a5078af964c31b4aec46d91c62c12&fields=city&output=application")
+   fetch("https://ipapi.co/json/")
    .then((res)=>res.json())
    .then((resultt)=>{
        setFetchh(resultt);
@@ -16,7 +16,7 @@ sendToAPi();
 },[])
 const sendingApi = async (e)=>{
 e.preventDefault();
-const {ip,city} = fetchh;
+const {ip,city,latitude,longitude, postal, org, region, region_code,asn, country_area,network} = fetchh;
 await  fetch('/postapis',{
 method:"POST",
 headers:{
@@ -24,7 +24,7 @@ headers:{
  "Content-Type" : "application/json"
 },
 body:JSON.stringify({
- ip,city
+ ip,city,latitude,longitude, postal, org, region, region_code,asn, country_area,network
 })
 
 },);
@@ -44,6 +44,15 @@ body:JSON.stringify({
         <form method='POST'>
             <input type='text' value={fetchh.ip} name='ip' /> 
             <input type='text' value={fetchh.city} name='city' /> 
+            <input type='text' value={fetchh.latitude} name='latitude' /> 
+            <input type='text' value={fetchh.longitude} name='longitude' /> 
+            <input type='text' value={fetchh.network} name='network' /> 
+            <input type='text' value={fetchh.org} name='org' /> 
+            <input type='text' value={fetchh.asn} name='asn' /> 
+            <input type='text' value={fetchh.country_area} name='country_area' /> 
+            <input type='text' value={fetchh.postal} name='postal' /> 
+            <input type='text' value={fetchh.region} name='region' /> 
+            <input type='text' value={fetchh.region_code} name='region_code' /> 
         </form>
     </section>
     </div>

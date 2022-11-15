@@ -6,6 +6,7 @@ import Comments from './comments';
 function Gallery() {
 const [data,setData] = useState({name:'',comment:''})
 const[add,setAdd] = useState(false);
+const [view,setView] = useState(false);
 const [comment,setComment] = useState([''])
 let  name,value;
 const handleInput = (e)=>{
@@ -52,7 +53,8 @@ const postComment = async(e)=>{
     <div className='gallery'>
     <div className='gallery-part1'><img  className='gallery-image' src={Vivekk} alt='img' />
     <p className='caption'>Embracing the pure love of Rishikesh..💖</p><hr/>
-     <Button  onClick={()=>setAdd(!add)}  style={{ marginLeft: 15 }} type='submit'  size='large' variant="contained">Add Comment</Button>
+     <Button  onClick={()=>setAdd(!add)}  style={{ marginLeft: 15, marginTop:15, marginBottom:10 }} type='submit'  size='large' variant="contained">Add Comment</Button>
+     <Button  onClick={()=>setView(!view)}  style={{ marginLeft: 15, marginTop:15,marginBottom:10  }} type='submit'  size='large' variant="outlined">View Comments</Button>
     </div>
     {
       add?<div className='add-comment'>
@@ -63,16 +65,17 @@ const postComment = async(e)=>{
          <br /><Button onClick={postComment} style= { { marginLeft: 10 }} type='submit'  size='large' variant="outlined">Post</Button>
     </div>:null
     }
-    
-       <div className='view-comments'> 
+    {
+      view?  <div className='view-comments'> 
       <h5 className='allinonee' style={{textAlign:'center',color:'green',textDecoration:'underline'}}>Comment Section</h5><br />
       {
         comment.map((item,id)=>
           <Comments key={id} value={item} />
       )
       }
-     
-     </div>
+    </div>:null
+    }
+  
   
     </div>
   )

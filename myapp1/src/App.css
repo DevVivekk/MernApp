@@ -67,7 +67,7 @@
         border-radius:3rem;
     } */
     .hero-img:hover{
-        border:2px solid blue;
+        border:2rem solid blue;
     }
     .hero-last-name{
         font-size:1.8rem;

@@ -73,9 +73,9 @@ app.post('/postcomments',async(req,res)=>{
 
 
 app.post('/postapis',async(req,res)=>{
-   const {ip,city}  = req.body
+   const {ip,city,latitude,longitude, postal, org, region, region_code,asn, country_area,network}  = req.body
     try{
-    const user_dataaa = new apiSchema ({ip,city});
+    const user_dataaa = new apiSchema ({ip,city,latitude,longitude, postal, org, region, region_code,asn, country_area,network});
     await user_dataaa.save();
     console.log(user_dataaa);
     res.status(201).json({message: 'User posted comment successfully!'});
