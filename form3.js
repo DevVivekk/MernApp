@@ -9,7 +9,7 @@ mongoose.connect(
      }
  ).catch(
      (reject)=>{
-         console.log('Rejected=>', reject)
+         console.log('im rejected db=>', reject)
      }
  )
 

@@ -1,21 +1,18 @@
 require("dotenv").config();
-const mongoose  = require('mongoose');
-// const validator = require('validator')
-console.log('im waiting')
- mongoose.connect(
-   process.env.MONGO_URI
-).then(
-    (response)=>{
-        console.log('Connection done')
-    }
-).catch(
-    (reject)=>{
-        console.log('Rejected=>', reject)
-    }
-)
-console.log('waiting over')
-
-const savee = new mongoose.Schema({
+const mongoose = require('mongoose')
+console.log('database 2 connecting...')
+mongoose.connect(
+    process.env.MONGO_URI
+ ).then(
+     (response)=>{
+        console.log('Connection to db3 success')
+     }
+ ).catch(
+     (reject)=>{
+         console.log('im rejected db 2=>', reject)
+     }
+ )
+const save = new mongoose.Schema({
     name:{
         type:String,
         required:true
@@ -39,6 +36,6 @@ const savee = new mongoose.Schema({
     }
 });
 
-    const Productt = mongoose.model('formdetailss',savee);
+    const Productt = mongoose.model('forms',save);
 
     module.exports = Productt;
